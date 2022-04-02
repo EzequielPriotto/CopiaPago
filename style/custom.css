@@ -1,0 +1,305 @@
+
+:root{
+    --color: #7CC6FE;
+}
+
+
+body{
+    background-image: url('../assets/wall-1846965_1920.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+#navbar {
+    /* background-color: #57b1eefb !important; */
+    background-color: #7CC6FE ;
+}
+.form-control:focus, .btn:focus{
+    /* box-shadow: 0px 0px 20px rgba(0, 89, 255, 0.527)!important; */
+    box-shadow: 0px 0px 20px rgba(0, 89, 255, 0)!important;
+    /* background-color: brown; */
+}
+
+.boton-busqueda, .form-control{
+    
+    border: 1px solid rgba(182, 182, 182, 0);
+    background-color: rgba(240, 248, 255, 0);
+}
+#boton-busqueda{
+    transition: .2s;
+}
+
+.form-control{
+    width: 0;
+    transition: .2s;
+}
+
+.busqueda-desactive{
+    width: 0;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.busqueda-active{
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.929);
+}
+
+
+.navbar-brand{
+    width: 30%;
+}
+.img-logo{
+    width: 100%;
+}
+
+.busqueda{
+    width: 100%;
+    margin-left: 0;
+}
+
+
+.btn-mg{
+    transform: scale(.7);
+
+}
+
+.btnBusquedaCelu{
+    transition: .3s;
+}
+.btnBusquedaCompu{
+    transition: .3s;
+}
+
+
+
+
+.img-carrucel{
+    height: 12rem;
+}
+.img-carrucel img{
+    object-fit: cover;
+    width: auto;
+}
+
+.seccion-tarjetas{
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.658);
+    margin-bottom: 5%;
+    background-color: rgb(255, 255, 255);
+}
+
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+}
+
+
+
+
+.card{
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px black;
+    transition: 0.4s ease-in-out;
+    background-color: #f1f5f9;
+    max-width: 90%;
+
+}
+
+.card:hover{
+    box-shadow: 0 0 20px 1px black;
+  
+
+}
+
+.tarjeta{
+    transition: 1s;
+}
+
+.tarjeta:hover{
+    transform: scale(1.06);
+}
+
+.card-text{
+    color: #3991d4;
+}
+
+.card .btn{
+    margin-top: 3% ;
+    background-color: #5faeeb;
+    transition: 0.3s ease-in-out;
+    border: 0px solid #07487aad;
+    border: none;
+}
+
+.card .btn:hover{
+    background-color: #3991d4;
+    border: 1px solid #07487aad;
+    
+    box-shadow: 0 0 20px  #0745758e;
+}
+
+.card .btn:focus{
+    box-shadow: 0 0 20px 1px var(--color);
+
+}
+
+.card img{
+    padding-top: 10%;
+    border-radius: 5%;
+    max-height: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    object-fit: contain;
+}
+
+.card .carousel{
+    width: 98%;
+    
+}
+
+ 
+
+
+#masInfo{
+    width: 80%;
+    margin: 1rem 0 2rem 0;
+  }
+  .footerLink{
+    text-decoration: none;
+    color: rgb(100, 97, 97);
+    opacity: .55;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+  .nav-link{
+    color: rgb(100, 97, 97);
+  }
+  footer{
+    min-width: 100%;
+  }
+  footer small{
+    opacity: .45;
+  }
+ 
+  footer div{
+    width: 78%;
+  }
+
+  .btn-check:focus+.btn, .btn:focus {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0)!important;
+    border-radius: 0%;
+  } 
+  .btn-check:focus+.btn, .btn:focus {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0)!important;
+    border-radius: 0%;
+  } 
+
+  .btn-footer:hover{
+    color: #3991d4;
+ 
+ }
+  
+  
+
+#numFavs{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+.carrucel-icono{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230e7aff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+.d{
+    transform: rotate(180deg);
+}
+.carousel-control-next, .carousel-control-prev{
+    margin: 0 5%;
+}
+
+
+.modal-footer div:first-child{
+    margin-left: 3%;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) { 
+    .navbar-brand{
+        width: 15%;
+    }
+   
+   
+
+}
+@media (min-width: 992px) { 
+    .navbar-brand{
+        width: 8%;
+    }
+        
+    .img-carrucel{
+        height: 100%;
+
+    }
+    .img-carrucel img{
+
+        object-fit: contain;
+        
+    }
+    .busqueda{
+        margin-left: 15%; 
+        width: 50%;
+    }
+    
+
+ }
+
+
+
+
+/* 
+              .-""""-.
+             /        \
+            /_        _\
+           // \      / \\
+           |\__\    /__/|
+            \    ||    /
+             \        /
+              \  __  /  \  /          ________________________________
+               '.__.'    \/          /                                 \
+                |  |     /\         |     te acabas de encontrar       |
+                |  |    O  O        |    con el alien Robertito!       |
+                ----    //         O \_________________________________/
+               (    )  //        O
+              (\\     //       o
+             (  \\    )      o
+             (   \\   )   /\
+   ___[\______/^^^^^^^\__/) o-)__
+  |\__[=======______//________)__\
+  \|_______________//____________|
+      |||      || //||     |||
+      |||      || @.||     |||
+       ||      \/  .\/      ||
+                  . .
+                 '.'.`
+ */
