@@ -388,102 +388,103 @@
   </section>
 
 
+  <section id="modals-container">
 
-  <!-- Modal Auris-->
-  <div class="modal fade" id="aurisModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class=" modal-header d-flex justify-content-between">
-          <h5 class="modal-title me-5" id="exampleModalLabel">AURICULARES SONY</h5>
-          <button type="button" id="btn-favorito"> FAVORITO </button>
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <img src="./assets/cards/auri3.webp" class="w-100" alt="">
+    <!-- Modal Auris-->
+    <div class="modal fade" id="aurisModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" id="aurisModalContent">
+          <div class=" modal-header d-flex justify-content-between">
+            <h5 class="modal-title me-5" id="exampleModalLabel">AURICULARES SONY</h5>
+            <label for="btn-favorito-auris" class="me-3"><button type="checkbox" class="btnModalFav" id="btn-favorito-auris">  </button><i class="fa-solid fa-heart"></i></label>
           </div>
-          <div>
-            <p class="text-center">Los mejores auriculares para el uso personal del mercado</p>
+          <div class="modal-body">
+            <div class="mb-3">
+              <img src="./assets/cards/auri3.webp" class="w-100" alt="">
+            </div>
+            <div>
+              <p class="text-center">Los mejores auriculares para el uso personal del mercado</p>
+            </div>
+  
           </div>
-
-        </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <div>
-            <p class="text-center me-5 text-success fw-bold">$5600</p>
-          </div>
-          <div>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="button" id='boton_compra-1' class=" btn btn-success" data-dismiss="modal" onclick="compra()">Comprar</button>
+          <div class="modal-footer d-flex justify-content-between">
+            <div>
+              <p class="text-center me-5 text-success fw-bold">$5600</p>
+            </div>
+            <div>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" id='boton_compra-1' class=" btn btn-success" data-dismiss="modal" onclick="compra()">Comprar</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Modal Play-->
-  <div class="modal fade" id="playModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class=" modal-header d-flex justify-content-center">
-          <h5 class="modal-title" id="exampleModalLabel">SONY PLAYSTATION 5</h5>
-
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <img src="./assets/cards/ps1.png" class="w-100" alt="">
+  
+    <!-- Modal Play-->
+    <div class="modal fade" id="playModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" id="playModalContent">
+          <div class=" modal-header d-flex justify-content-between">
+            <h5 class="modal-title me-5" id="exampleModalLabel">SONY PLAYSTATION 5</h5>
+            <label for="btn-favorito-auris" class="me-3"><button type="checkbox" class="btnModalFav" id="btn-favorito-auris">  </button><i class="fa-solid fa-heart"></i></label>
           </div>
-          <div>
-            <p class="text-center">Ultima consola de la linea sony playstation, disfruta de horas de diversion</p>
+          <div class="modal-body">
+            <div class="mb-3">
+              <img src="./assets/cards/ps1.png" class="w-100" alt="">
+            </div>
+            <div>
+              <p class="text-center">Ultima consola de la linea sony playstation, disfruta de horas de diversion</p>
+            </div>
           </div>
-        </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <div>
-            <p class="text-center me-5 text-success fw-bold">$90000</p>
-          </div>
-          <div>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="button" id='boton_compra-2' class=" btn btn-success" data-dismiss="modal"  onclick="compra()">Comprar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Camara-->
-  <div class="modal fade" id="camModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class=" modal-header d-flex justify-content-center">
-          <h5 class="modal-title" id="exampleModalLabel"> CAM SONY A7 II</h5>
-          <!-- <button type="button" class="btn btn-footer"><img src="./assets/iconMG.png" alt="Favorito" class="btn-mg"></button> -->
-
-        </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <img src="./assets/cards/cam2.png" class="w-100" alt="">
-          </div>
-          <div>
-            <p class="text-center">La mejor calidad de imagen junta a un precio accesible, llegando a resoluciones 4k.
-              Esto y mucho mas con la nueva Sony A7 II CAM
-
-            </p>
-          </div>
-        </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <div>
-            <p class="text-center me-5 text-success fw-bold">$35400</p>
-          </div>
-          <div>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="button" id='boton_compra-3' class=" btn btn-success" data-dismiss="modal"  onclick="compra()">Comprar</button>
+          <div class="modal-footer d-flex justify-content-between">
+            <div>
+              <p class="text-center me-5 text-success fw-bold">$90000</p>
+            </div>
+            <div>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" id='boton_compra-2' class=" btn btn-success" data-dismiss="modal"  onclick="compra()">Comprar</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  
+    <!-- Modal Camara-->
+    <div class="modal fade" id="camModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content" id="camModalContent">
+          <div class=" modal-header d-flex justify-content-between">
+            <h5 class="modal-title me-5" id="exampleModalLabel">SONY A7 II CAM</h5>
+            <label for="btn-favorito-cam" class="me-3"><button type="checkbox" class="btnModalFav" id="btn-favorito-cam">  </button><i class="fa-solid fa-heart"></i></label>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <img src="./assets/cards/cam2.png" class="w-100" alt="">
+            </div>
+            <div>
+              <p class="text-center">La mejor calidad de imagen junta a un precio accesible, llegando a resoluciones 4k.
+                Esto y mucho mas con la nueva Sony A7 II CAM
+  
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <div>
+              <p class="text-center me-5 text-success fw-bold">$35400</p>
+            </div>
+            <div>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <button type="button" id='boton_compra-3' class=" btn btn-success" data-dismiss="modal"  onclick="compra()">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+  </section>  
 
 
   <!-- =================FOOTER================= -->
@@ -573,6 +574,9 @@
     </div>
   </footer>
 
+
+  
+  <script src="https://kit.fontawesome.com/19b971d5e3.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

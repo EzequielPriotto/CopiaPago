@@ -66,13 +66,42 @@ let itemFavs = document.querySelector('#itemFavs');
 let contadorFavs = 0;
 itemFavs.innerHTML = `<span>Favoritos</span>`;
 
-let body = document.querySelector('body');
-body.addEventListener('click', (event)=>{
-  if(event.target.id === "btn-favorito"){
+
+  let modalContainerAuris = document.querySelector('#aurisModalContent')
+  let modalContainerPlay = document.querySelector('#playModalContent')
+  let modalContainerCam = document.querySelector('#camModalContent')
+
+
+  
+
+
+  modalContainerAuris.addEventListener('click', (event)=>{
+    let target = event.target
+    console.log(target)
+    // prueba(target)
+  })
+  modalContainerPlay.addEventListener('click', (event)=>{
+    let target = event.target
+    // prueba(target)
+  })
+  modalContainerCam.addEventListener('click', (event)=>{
+    let target = event.target
+    // prueba(target)
+  })
+
+function prueba (target){
+  // console.log(target.id)
+  if(target.classList.contains("btnModalFav") && !target.nextSibling.classList.contains("btnActivo")){
     contadorFavs = contadorFavs + 1;
     itemFavs.innerHTML = `<span>Favoritos</span> <span>${contadorFavs}</span>`;
+    target.nextSibling.classList.add("btnActivo")
   }
-})
+  else if(target.nextSibling.classList.contains("btnActivo")){
+    contadorFavs = contadorFavs - 1;
+    itemFavs.innerHTML = `<span>Favoritos</span> <span>${contadorFavs === 0 ? "" : contadorFavs}</span>`;
+    target.nextSibling.classList.remove("btnActivo")
+  }
+}
 
 
 

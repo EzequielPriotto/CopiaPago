@@ -1,0 +1,3 @@
+  contadorFavs = contadorFavs + 1;
+  itemFavs.innerHTML = `<span>Favoritos</span> <span>${contadorFavs}</span>`;
+  .classList.add("btnActivo")
